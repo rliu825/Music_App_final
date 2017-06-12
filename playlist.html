@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exercise 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="style.css" >
+
+  </head>
+
+  <body>
+    
+  
+      <div class="container">
+        <div class="header">
+          <nav class="navbar navbar-default navbar-fixed-top">
+            <ul class="nav nav-tabs">
+      
+              <li class= "icon col-xs-4 col-sm-4" name="lib" >
+                <span class="glyphicon glyphicon-music" aria-hidden="true"></span>
+                <div class="optionText">Library</div>  
+              </li>
+              
+              <li class= "icon col-xs-4 col-sm-4" id="active" name="list">
+                <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                <div class="optionText" id="activeText">Playlists</div> 
+              </li>
+
+              <li class= "icon col-xs-4 col-sm-4" name="search1">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                <div class="optionText">Search</div> 
+              </li>
+            </ul>
+          </nav>
+          
+        </div>
+
+
+        <div class="bodybox">
+
+<!-- Content for playlist tab --> 
+        <div class="AddPlayListSection"  id='playlistTab' name="Page 2">
+            <button class="addPlayListButton"> 
+              <div class="Playlist-content">   
+              <span class="glyphicon glyphicon-plus" ></span><span class="Playlist-text" >Playlist</span>
+              </div>
+            </button>
+            <section class="Playlists">
+              <div class="row" name="PlaylistSection">
+
+              </div>
+            </section>
+        </div>
+<!-- Content for Library tab --> 
+        <div class="AddPlayListSection"  id = 'libraryTab' name="Page 1">     
+          <div class="addPlayListTwoButtons">      
+            <button class="sortByArtist" id="artistbutton"> 
+              <div class="Playlist-content">   
+              <span class="Playlist-text" id="sortByArtist" >Sort by artist</span>
+              </div>
+            </button>                
+            <button class="sortByTitle" id ="songnamebutton"> 
+              <div class="Playlist-content"> 
+              <span class="Playlist-text" id="sortByTitle" >Sort by title</span>
+              </div>
+            </button>        
+          </div>
+
+            <section class="Playlists" id="libsongs" name="libsongs">
+              <div class="row" >
+              </div>
+            </section>
+
+            <section class="Playlists" id="sorByTitleSongs" name="sorByTitleSongs">
+              <div class="row" >
+              </div>
+            </section>
+        </div>
+
+
+
+
+
+<!-- Content for Displaying songs in a certain playlist under playlist tab-->
+<div id = "SongInPlaylistSection">
+<!--         <div class="AddPlayListSection"  id='playlistsong1' name="songInPlaylist">
+              <span class="Playlist-text1" >Mega Mix</span>
+            <section class="Playlists">
+              <div class="row" >
+              </div>
+            </section>
+        </div>
+
+
+        <div class="AddPlayListSection"  id='playlistsong2' name="songInPlaylist">
+              <span class="Playlist-text1" >Workout Tracks</span>
+            <section class="Playlists">
+              <div class="row" >
+              </div>
+            </section>
+        </div>
+
+        <div class="AddPlayListSection"  id='playlistsong3' name="songInPlaylist">
+              <span class="Playlist-text1" >Daft Punk</span>
+            <section class="Playlists">
+              <div class="row" >
+              </div>
+            </section>
+        </div>
+ -->
+</div>
+
+<!-- Content for Search tab --> 
+        <div class="AddPlayListSection"  id='searchTab' name="Page 3">
+              <div class = "searchBar"><form><input type="text" class="searchBarContent col-xs-12 col-md-12" placeholder="Search" id="inputTxt"></form></div>
+            <section class="Playlists">
+              <div class="row" id="searchList">
+
+
+
+              </div>
+            </section>
+        </div>
+
+
+
+
+
+        <div id="modal">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Choose playlist</h4>
+                </div>
+                <div class="modal-body">
+                  
+<!--                     <div class="modal-row">90's Mega Mix</div>
+                    <div class="modal-row">Workout Tracks</div>
+                    <div class="modal-row">Daft Punk mix</div> -->
+
+                </div>
+
+              </div>
+
+            </div>
+        </div>
+
+
+    </div>
+  </body>
+
+<!--   <script src="music-data.js" type="text/javascript"></script> -->
+  <script src="music-app.js" type="text/javascript" ></script>
+</html>
